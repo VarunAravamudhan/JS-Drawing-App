@@ -1,9 +1,11 @@
-# Experiment: JavaScript-Based Drawing Application
+# EXPERIMENT: JAVASCRIPT-BASED DRAWING APPLICATION
 
-## Aim
+## AIM
+
 To develop a JavaScript-based drawing application using HTML5 Canvas to draw shapes such as Line, Rectangle, and Circle.
 
-## Algorithm
+## ALGORITHM
+
 1. Create an HTML page.
 2. Add a `<canvas>` element to create the drawing area.
 3. Add a drop-down list to select the shape (Line, Rectangle, or Circle).
@@ -17,13 +19,14 @@ To develop a JavaScript-based drawing application using HTML5 Canvas to draw sha
    - Use `arc()` for a circle.
 9. Display the drawn shape on the canvas.
 
-## Program
+## PROGRAM
+
+
+## OUTPUT
 
 
 
-## Output
+## RESULT
 
-
-## Result
 A JavaScript-based drawing application was successfully developed using HTML5 Canvas. The application enables users to draw Lines, Rectangles, and Circles interactively using mouse events.
 
