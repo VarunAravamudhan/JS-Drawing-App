@@ -20,7 +20,63 @@ To develop a JavaScript-based drawing application using HTML5 Canvas to draw sha
 9. Display the drawn shape on the canvas.
 
 ## PROGRAM
+~~~
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>canvas</title>
+        <style>
+            canvas {
+                border: 2px solid black;
+                background-color: white;
+                display: block;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <select id="shape">
+            <option value="Line">Line</option>
+            <option value="Rectangle">Rectangle</option>
+            <option value="Circle">Circle</option>
+        </select>
 
+        <canvas id="canvas" height="500" width="500"></canvas>
+
+        <script>
+            let canvas = document.getElementById("canvas");
+            let ctx = canvas.getContext("2d");
+            let x, y;
+
+            canvas.addEventListener("mousedown", function(e) {
+                x = e.offsetX;
+                y = e.offsetY;
+            });
+
+            canvas.addEventListener("mouseup", function(e) {
+                let endx = e.offsetX;
+                let endy = e.offsetY;
+                let shape = document.getElementById("shape").value;
+
+                if (shape === "Line") {
+                    ctx.beginPath();
+                    ctx.moveTo(x, y);
+                    ctx.lineTo(endx, endy);
+                    ctx.stroke();
+                } else if (shape === "Rectangle") {
+                    ctx.beginPath();
+                    ctx.strokeRect(x, y, endx - x, endy - y);
+                } else if (shape === "Circle") {
+                    let radius = Math.sqrt(Math.pow((endx - x), 2) + Math.pow((endy - y), 2));
+                    ctx.beginPath();
+                    ctx.arc(x, y, radius, 0, Math.PI * 2);
+                    ctx.stroke();
+                }
+            });
+        </script>
+    </body>
+</html>
+~~~
 
 ## OUTPUT
 
