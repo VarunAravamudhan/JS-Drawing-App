@@ -80,6 +80,15 @@ To develop a JavaScript-based drawing application using HTML5 Canvas to draw sha
 
 ## OUTPUT
 
+### Line
+<img width="821" height="777" alt="image" src="https://github.com/user-attachments/assets/b96ccbf1-77c9-488d-8078-4e543fbabe13" />
+
+### Rectangle
+
+<img width="693" height="735" alt="image" src="https://github.com/user-attachments/assets/d4192199-c7fb-477b-9528-8bcacfa92c64" />
+
+### Circle
+<img width="823" height="816" alt="image" src="https://github.com/user-attachments/assets/f87d3d05-9a31-4f75-af96-6870fd5cf7d2" />
 
 
 ## RESULT
